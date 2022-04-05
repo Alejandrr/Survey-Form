@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: bisque;
+}
+body{
+    width: 800px;
+    border: 5px solid black;
+    margin : 50px auto auto auto;
+    border-radius: 5px;
+}
+h1,p{
+    text-align: center;
+    background-color:rgb(160, 142, 114);
+    margin-top:auto ;
+    margin-bottom: auto;
+    padding-bottom:10px ;
+}
+h1{
+    text-shadow: 2px 2px 1px rgb(37, 36, 36);
+}
+
+#survey-form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: rgb(254, 254, 255);
+}
+input[id="age"]:placeholder-shown,#dropdown:placeholder-shown,input[id="name"]:placeholder-shown,input[id="email"]:placeholder-shown{
+    border-color: red;
+}
+input[id="age"],#dropdown,input[id="name"],input[id="email"]{
+    display: block;
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color:azure;
+    border: 2px solid black;
+}
+#dropdown select{
+    display: none;
+}
+#name-label,#number-label{
+    margin-left: 240px;
+}
+input[id="name"],input[id="age"]{ 
+    margin-left: 140px;
+}
+#email-label,#language-label{
+    margin-left: 150px;
+}
+input[id="email"],#dropdown{
+    margin-left: 50px;
+}
+
+#course-radio-group-block{
+    margin-left: 140px;
+    width : 250px;
+    height: 100px;
+}
+#skills-checkbox-group-block{
+    margin-left: 50px;
+    width: 250px;
+    height: 100px;
+}
+#description{
+    background-color: azure;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 500px;
+    height: 150px;
+    resize: none;
+}
+
+#submit{
+  background-color: #000000;
+  border: 2px solid #f1f1f1;
+  border-radius: 15px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  width: 300px ;
+  height: 50px;
+  margin-left: 250px;
+  margin-bottom: 50px ;
+}
+#submit:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+label{
+    font-weight: 700;
+}
+label[class="course-radio-group"],label[class="skills-checkbox-group"]{
+    font-style: italic;
+    font-weight:400;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/style.css" rel="stylesheet">
+    <title>Survey form</title>
+</head>
+<body>
+   <h1 id="title" class ="text-8xl">
+        Survey form
+   </h1>
+   <p id="info" class = "description">
+    Every time you fill out a form, one Russian invader dies
+   </p>
+   <form action="survey-form" id="survey-form">
+        <div>
+            <label id="name-label" for="name">Name</label>
+            <input id="name" placeholder="Enter your name..." required="required">
+        </div>
+        <div>
+            <label id ="email-label"for="email">Email</label>
+            <input id="email"placeholder="email@gmail.com..." required="required">
+        </div>
+        <div>
+            <label id="number-label" for="age">Age</label>
+            <input id="age" type="number" step="1"  min="1" max="100" placeholder="Choose your old...">
+        </div>
+        <div>
+            <label id="language-label" for="language">Language</label>
+            <select name="languages" id="dropdown" required>
+                <option  disabled selected>Choose your language...</option>
+                <option value="English">English</option>
+                <option value="Українська">Українська</option>
+                <option value="Polski">Polski</option>
+            </select>
+        </div>
+        <div id="course-radio-group-block">
+            <label for="course-radio-group" id="label-course-radio-group">Which courses you wish start learn?</label><br>
+
+            <input type="radio" name="course-radio-group"  class="course-radio-group" id="C++" required>
+            <Label for="C++" class="course-radio-group">C++</Label><br>
+
+            <input type="radio" name="course-radio-group" class="course-radio-group" id="C">
+            <Label for="C" class="course-radio-group">C</Label><br>
+
+            <input type="radio" name="course-radio-group" class="course-radio-group" id="C#">
+            <Label for="C#" class="course-radio-group">C#</Label><br>
+
+            <input type="radio" name="course-radio-group"class="course-radio-group" id="F#">
+            <Label for="F#" class="course-radio-group">F#</Label>
+        </div>
+        <div id="skills-checkbox-group-block">
+            <label for="skills-checkbox-group" id="label-skills-checkbox-group">Сhoose your skills</label><br>
+
+            <input type="checkbox"  class="skills-checkbox-group" id="OOP" value="OOP" >
+            <Label for="OOP" class="skills-checkbox-group">OOP</Label><br>
+
+            <input type="checkbox"  class="skills-checkbox-group" id="Multithread programming" value="Multithread programming">
+            <Label for="Multithread programming" class="skills-checkbox-group">Multithread programming</Label><br>
+
+            <input type="checkbox"  class="skills-checkbox-group" id="A&D" value="Algorithm`s & Data Structures">
+            <Label for="A&D" class="skills-checkbox-group">Algorithm`s & Data Structures</Label><br>
+            
+            <input type="checkbox"  class="skills-checkbox-group" id="Data bases" value="Data bases">
+            <Label for="Data bases" class="skills-checkbox-group">Data bases</Label>
+        </div>
+        <div>
+            <textarea id="description" placeholder="Put some more info about yourself..." rows="10" cols="20"></textarea>
+        </div>
+        <button type="submit" id="submit">Submit</button>
+   </form>
+</body>
+</html>
